@@ -6,7 +6,7 @@ This a theming tutorial for a sencha blog post. This repository contains my Spot
 * Sencha Cmd version 6 (to check it, run: `sencha which` on the CLI)
 * (optionally) Sencha App Inspector, the new stand-alone app, which contains the theme roller.
 
-#Getting Started.
+#Getting Started
 
 1. Navigate to your Ext6 SDK on the CLI
 2. Generate a workspace
@@ -16,6 +16,7 @@ This a theming tutorial for a sencha blog post. This repository contains my Spot
 5. Checkout the theming app in your browser: *http://localhost:1841/extthemingapp/?platformTags=fashion:true*
 (make sure the url contains the ?platformTags=fashion:true)
 
-# Create your own theme.
+#How to create your own theme package
+
 Take a look into my blog post: TODO
 
