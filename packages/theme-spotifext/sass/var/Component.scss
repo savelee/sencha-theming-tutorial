@@ -1,0 +1,82 @@
+@import _settings.scss;
+
+///////////////////// GLOBAL SENCHA VARS
+
+$body-background-color: $dark-bg3;
+$color: $front-color;
+$enable-font-smoothing: true;
+
+$panel-base-color: $dark-bg;
+$panel-body-background-color : $dark-bg2;
+$panel-frame-background-color: $dark-bg3;
+$panel-header-font-size: 12px;
+$panel-header-font-weight: 700;
+$panel-header-color: $front-color;
+
+$border-layout-ct-background-color: $dark-bg;
+$splitter-collapse-tool-background-color: $dark-bg2;
+$splitter-collapse-tool-glyph-color: $highlight-color;
+
+$accordion-background-color: $dark-bg;
+$accordion-header-over-background-color: $dark-bg;
+$accordion-header-color-over: $highlight-color;
+$accordion-header-background-color: $dark-bg3;
+$accordion-header-color: $front-color;
+$accordion-tool-glyph-color: $front-color2;
+
+$menu-background-color: $dark-bg;
+$menu-item-active-background-color: $dark-bg3;
+$menu-border-color: $dark-bg4;
+$menu-text-color: $front-color;
+$menu-separator-border-color: $dark-bg;
+
+$tree-glyph-color: $front-color;
+
+$toolbar-footer-background-color: $dark-bg;
+$toolbar-background-color: $dark-bg2;
+$toolbar-text-color: $front-color2;
+$toolbar-font-size: 11px;
+
+$messagebox-body-background-color: $dark-bg2;
+$messagebox-footer-background-color: $dark-bg;
+$messagebox-header-background-color: $dark-bg;
+$messagebox-error-glyph-color: #fff;
+$messagebox-warning-glyph-color: #fff;
+$messagebox-question-glyph-color: #fff;
+$window-body-background-color: $dark-bg2;
+$window-header-background-color: $dark-bg2;
+$window-body-color: $front-color2;
+$window-header-color: $front-color2;
+
+$css-shadow-border-radius: 20px;
+$css-shadow-border-color: blue;
+
+$progress-background-color: $dark-bg;
+
+$boundlist-background-color: $dark-bg;
+$boundlist-border-color: $dark-bg3;
+$boundlist-item-over-background-color: darken($dark-bg3, 2%);
+$boundlist-item-over-text-color: $front-color2;
+$boundlist-item-selected-background-color : $dark-bg3;
+$boundlist-item-selected-text-color : $highlight-color2;
+
+
+$colorpicker-background-color: $dark-bg;
+$colorpicker-border-color: $dark-bg2;
+$colorpicker-item-inner-border-color: $dark-bg3;
+
+$datepicker-background-color: $dark-bg2;
+$datepicker-border-color: $dark-bg;
+$datepicker-column-header-background-color: $dark-bg2;
+$datepicker-header-background-color: $dark-bg;
+$datepicker-item-border-color: $dark-bg;
+$datepicker-item-hover-background-color: $highlight-color;
+$datepicker-item-color: $front-color2;
+
+$slider-track-background-color: $dark-bg;
+$slider-track-border-color: $highlight-color;
+$slider-thumb-glyph-color: $highlight-color;
+$slider-thumb-background-color: $dark-bg3;
+
+$toolbar-background-color: $dark-bg;
+$tip-background-color: $dark-bg;

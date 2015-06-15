@@ -1,0 +1,16 @@
+$base-color: #639000;
+
+$dark-bg: #000;
+$dark-bg2: #121314;
+$dark-bg3: #222326;
+$dark-bg4: darken(#88898C, 15%);
+
+$front-color: #adafb2;
+$front-color2: #fff;
+
+$highlight-color: $base-color;
+$highlight-color2: lighten($highlight-color, 20%);
+$highlight-color3: darken($highlight-color, 20%);
+
+$font-family: 'Montserrat', helvetica , arial , verdana , sans-serif;
+$font-size: 12px;

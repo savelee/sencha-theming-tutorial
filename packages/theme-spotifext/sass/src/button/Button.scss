@@ -1,0 +1,151 @@
+@include extjs-button-small-ui(
+	$ui: 'round',
+
+	$font-weight: bold,
+	$padding: 5px,
+	$background-color: $highlight-color 
+);
+
+@include extjs-button-toolbar-small-ui(
+	$ui: 'round',
+
+	$font-weight: bold,
+	$padding: 5px,
+	$background-color: $highlight-color 
+);
+
+
+@include extjs-button-medium-ui(
+	$ui: 'round',
+
+	$font-weight: bold,
+	$padding: 8px,
+	$background-color: $highlight-color 
+);
+
+@include extjs-button-toolbar-medium-ui(
+	$ui: 'round',
+
+	$font-weight: bold,
+	$padding: 8px,
+	$background-color: $highlight-color 
+);
+
+@include extjs-button-large-ui(
+	$ui: 'round',
+
+	$font-weight: bold,
+	$padding: 12px,
+	$background-color: $highlight-color 
+);
+
+@include extjs-button-toolbar-large-ui(
+	$ui: 'round',
+
+	$font-weight: bold,
+	$padding: 12px,
+	$background-color: $highlight-color 
+);
+
+@include extjs-button-small-ui(
+	$ui: 'gray',
+
+	$font-weight: bold,
+	$padding: 5px,
+	$background-color: $dark-bg,
+	$border-color: $front-color,
+	$border-width: 2px
+);
+
+@include extjs-button-toolbar-small-ui(
+	$ui: 'gray',
+
+	$font-weight: bold,
+	$padding: 5px,
+	$background-color: $dark-bg,
+	$border-color: $front-color,
+	$border-width: 2px
+);
+
+@include extjs-button-medium-ui(
+	$ui: 'gray',
+
+	$font-weight: bold,
+	$padding: 8px,
+	$background-color: $dark-bg,
+	$border-color: $front-color,
+	$border-width: 2px
+);
+
+@include extjs-button-toolbar-medium-ui(
+	$ui: 'gray',
+
+	$font-weight: bold,
+	$padding: 8px,
+	$background-color: $dark-bg,
+	$border-color: $front-color,
+	$border-width: 2px
+);
+
+@include extjs-button-large-ui(
+	$ui: 'gray',
+
+	$font-weight: bold,
+	$padding: 12px,
+	$background-color: $dark-bg,
+	$border-color: $front-color,
+	$border-width: 2px
+);
+
+@include extjs-button-toolbar-large-ui(
+	$ui: 'gray',
+
+	$font-weight: bold,
+	$padding: 12px,
+	$background-color: $dark-bg,
+	$border-color: $front-color,
+	$border-width: 2px
+);
+
+.x-btn-gray-toolbar-small,
+.x-btn-gray-toolbar-medium,
+.x-btn-gray-toolbar-large,
+.x-btn-gray-small,
+.x-btn-gray-medium,
+.x-btn-gray-large,
+.x-btn-round-large,
+.x-btn-round-medium,
+.x-btn-round-small {
+	-ms-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	text-transform: uppercase;	
+}
+
+.x-btn-gray-toolbar-small,
+.x-btn-gray-toolbar-medium,
+.x-btn-gray-toolbar-large,
+.x-btn-gray-large,
+.x-btn-gray-medium,
+.x-btn-gray-small {
+	&:hover {
+	  border-color: lighten($highlight-color, 20%);
+	  -webkit-transition: border-color 2s ease-out;
+	  -moz-transition: border-color 2s ease-out;
+	  -o-transition: border-color 2s ease-out;
+	  transition: border-color 2s ease-out;
+	}
+}
+
+.x-btn-round-large,
+.x-btn-round-medium,
+.x-btn-round-small {
+	&:hover {
+	  background-color: $highlight-color2;
+	  -webkit-transition: background-color 2s ease-out;
+	  -moz-transition: background-color 2s ease-out;
+	  -o-transition: background-color 2s ease-out;
+	  transition: background-color 2s ease-out;
+	}
+}

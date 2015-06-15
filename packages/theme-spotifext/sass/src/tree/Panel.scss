@@ -1,0 +1,21 @@
+.x-tree-view {
+	background: lighten($dark-bg3, 2%);
+	
+	.x-grid-cell-inner-treecolumn {
+		padding: 2px;
+	}
+
+	.x-grid-item {
+		background: lighten($dark-bg3, 2%);
+		border-left: 4px solid transparent;
+	}
+
+	.x-grid-item-over {
+		background: lighten($dark-bg3, 1%);
+	}
+
+	.x-grid-item-selected {
+		background: lighten($dark-bg3, 5%);
+		border-left: 4px solid $highlight-color;
+	}
+}
