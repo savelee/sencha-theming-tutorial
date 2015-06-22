@@ -41,12 +41,12 @@
     /**
      * A summarized description of this package.
      */
-    "summary": "Lee Boonstra's Spotify-like custom theme.",
+    "summary": "This is Lee Boonstra's Spotifext (Spotify look a like theme).",
 
     /**
      * A detailed description of this package.
      */
-    "detailedDescription": "Lee Boonstra's Spotify-like custom theme. Based on Triton. You are free to use this theme but leave my author name as credits.",
+    "detailedDescription": "This is Lee Boonstra's Spotifext (Spotify look a like theme). Feel free to use it for your projects, but please leave my name in the author field.",
 
     /**
      * The package version.

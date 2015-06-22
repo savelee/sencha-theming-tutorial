@@ -1,10 +1,13 @@
-@import _settings.scss;
+@import '_config.scss';
 
 ///////////////////// GLOBAL SENCHA VARS
+$base-color: #639000;
 
 $body-background-color: $dark-bg3;
 $color: $front-color;
 $enable-font-smoothing: true;
+
+///////////////////// SENCHA COMPONENT VARS
 
 $panel-base-color: $dark-bg;
 $panel-body-background-color : $dark-bg2;
@@ -59,7 +62,6 @@ $boundlist-item-over-background-color: darken($dark-bg3, 2%);
 $boundlist-item-over-text-color: $front-color2;
 $boundlist-item-selected-background-color : $dark-bg3;
 $boundlist-item-selected-text-color : $highlight-color2;
-
 
 $colorpicker-background-color: $dark-bg;
 $colorpicker-border-color: $dark-bg2;
