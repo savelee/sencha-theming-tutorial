@@ -48,7 +48,7 @@
      */
     
     
-    "theme": "theme-spotifext",
+    "theme": "theme-irisk-dark",
     
     
     /**
@@ -180,7 +180,7 @@
      */
     "js": [
         {
-            "path": "http://localhost:3000/inspector.js",
+            "path": "http://local.senchainspector.com:1839/inspector.js",
             "remote": true,
             "bootstrap": true
         },

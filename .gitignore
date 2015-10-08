@@ -39,6 +39,7 @@ temp/
 build/
 ext/
 .sencha/
+packages/local/
 
 .sencha_backup/
 *slicer-temp*

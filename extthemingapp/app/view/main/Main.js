@@ -14,6 +14,7 @@ Ext.define('ThemingApp.view.main.Main', {
             height: 150,
             maxWidth: 150,
             title: 'Regular Panel',
+            glyph: '88@Spotifinder',
             tools: [
                 {
                     xtype: 'tool'
@@ -28,6 +29,7 @@ Ext.define('ThemingApp.view.main.Main', {
             frame: true,
             height: 150,
             title: 'Framed Panel',
+            glyph: '88@Spotifinder',
             tools: [
                 {
                     xtype: 'tool'
@@ -77,6 +79,7 @@ Ext.define('ThemingApp.view.main.Main', {
             x: 700,
             y: 10,
             frame: true,
+            plain: true,
             height: 150,
             width: 200,
             activeTab: 0,
@@ -300,35 +303,66 @@ Ext.define('ThemingApp.view.main.Main', {
                             name: 'Frederick',
                             gender: 'male',
                             age: 74
+                        },
+                        {
+                            name: 'Joe',
+                            gender: 'male',
+                            age: 36
+                        },
+                        {
+                            name: 'Anna',
+                            gender: 'female',
+                            age: 29
+                        },
+                        {
+                            name: 'Frederick',
+                            gender: 'male',
+                            age: 74
                         }
                     ]
                 }),
                 displayInfo: true,
                 displayMsg : 'Displaying topics {0} - {1} of {2}'
             }],
-            store: Ext.create('Ext.data.Store', {
-                fields: ['name', 'gender', {
-                    name: 'age',
-                    type: 'int'
-                }],
-                data: [
-                    {
-                        name: 'Joe',
-                        gender: 'male',
-                        age: 36
-                    },
-                    {
-                        name: 'Anna',
-                        gender: 'female',
-                        age: 29
-                    },
-                    {
-                        name: 'Frederick',
-                        gender: 'male',
-                        age: 74
-                    }
-                ]
-            }),
+ store: Ext.create('Ext.data.Store', {
+                    fields: ['name', 'gender', {
+                        name: 'age',
+                        type: 'int'
+                    }],
+                    data: [
+                        {
+                            name: 'Joe',
+                            gender: 'male',
+                            age: 36
+                        },
+                        {
+                            name: 'Anna',
+                            gender: 'female',
+                            age: 29
+                        },
+                        {
+                            name: 'Frederick',
+                            gender: 'male',
+                            age: 74
+                        },
+                        {
+                            name: 'Joe',
+                            gender: 'male',
+                            age: 36
+                        },
+                        {
+                            name: 'Anna',
+                            gender: 'female',
+                            age: 29
+                        },
+                        {
+                            name: 'Frederick',
+                            gender: 'male',
+                            age: 74
+                        }
+                    ]
+                }),
+			selType : 'checkboxmodel',
             columns: [
                 {
                     xtype: 'gridcolumn',
@@ -344,8 +378,27 @@ Ext.define('ThemingApp.view.main.Main', {
                 {
                     xtype: 'numbercolumn',
                     dataIndex: 'age',
-                    text: 'Age'
-                }
+                    text: 'Num'
+                },
+                { 
+			        xtype : 'templatecolumn', 
+			        dataIndex: 'age',
+			        text: 'New',
+			        flex : 1,
+
+			        tpl: new Ext.XTemplate(
+			        	'<span class="{[this.isPos(values)]}">{age}</span>',
+			        	{
+			        		isPos: function(values){
+           						if (values.age >= 30) {
+           							return "plus";
+           						} else {
+           							return "min";
+           						}
+			        		}
+			        	}
+			        )
+			    }
             ]
         },
 
@@ -547,7 +600,7 @@ Ext.define('ThemingApp.view.main.Main', {
         {
             xtype: 'button',
             x: 980,
-            y: 490,
+            y: 470,
             glyph: '88@Spotifinder',
             scale: 'medium',
             ui: 'round',
@@ -556,7 +609,7 @@ Ext.define('ThemingApp.view.main.Main', {
         {
             xtype: 'button',
             x: 980,
-            y: 560,
+            y: 510,
             scale: 'large',
             ui: 'round',
             text: 'round: large'
@@ -571,7 +624,7 @@ Ext.define('ThemingApp.view.main.Main', {
         {
             xtype: 'button',
             x: 980,
-            y: 690,
+            y: 670,
             glyph: '88@Spotifinder',
             scale: 'medium',
             ui: 'gray',
@@ -580,10 +633,34 @@ Ext.define('ThemingApp.view.main.Main', {
         {
             xtype: 'button',
             x: 980,
-            y: 750,
+            y: 710,
             scale: 'large',
             ui: 'gray',
             text: 'large: large'
+        },
+        {
+            xtype: 'button',
+            x: 1180,
+            y: 640,
+            ui: 'roundorange',
+            text: 'roundorange: small'
+        },
+        {
+            xtype: 'button',
+            x: 1180,
+            y: 670,
+            glyph: '88@Spotifinder',
+            scale: 'medium',
+            ui: 'roundorange',
+            text: 'roundorange: medium'
+        },
+        {
+            xtype: 'button',
+            x: 1180,
+            y: 710,
+            scale: 'large',
+            ui: 'roundorange',
+            text: 'roundorgange: large'
         },
         {
             xtype: 'panel',
