@@ -1,0 +1,9 @@
+//buttons
+$button-toolbar-background-color: $base-color;
+$button-toolbar-border-color: darken($button-toolbar-background-color, 10%);
+$button-toolbar-color: $white-color;
+$button-toolbar-glyph-color: $button-toolbar-color;
+$button-default-background-color: $link-color;
+$button-default-background-color-disabled: lighten($button-default-background-color, 10%);
+$button-default-background-color-over: darken($button-default-background-color, 10%);
+$button-default-border-color: darken($button-default-background-color, 10%);

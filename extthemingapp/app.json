@@ -3,7 +3,7 @@
      * The application's namespace.
      */
     "name": "ThemingApp",
-    
+
     /**
      * The version of the application.
      */
@@ -35,22 +35,22 @@
      * The Sencha Framework for this application: "ext" or "touch".
      */
     "framework": "ext",
-    
+
     /**
      * The toolkit to use. Select either "classic" or "modern".
      */
-    
+
     "toolkit": "classic",
-    
-    
+
+
     /**
      * The name of the theme for this application.
      */
-    
-    
+
+
     "theme": "theme-spotifext",
-    
-    
+    //"theme": "theme-material",
+
     /**
      * The list of required packages (with optional versions; default is "latest").
      *
@@ -180,11 +180,6 @@
      */
     "js": [
         {
-            "path": "http://local.senchainspector.com:1839/inspector.js",
-            "remote": true,
-            "bootstrap": true
-        },
-        {
             "path": "app.js",
             "bundle": true
         }
@@ -275,12 +270,12 @@
      */
     "production": {
         "output": {
-            
+
             "appCache": {
                 "enable": true,
                 "path": "cache.appcache"
             }
-            
+
         },
         "loader": {
             "cache": "${build.timestamp}"
@@ -289,7 +284,7 @@
             "enable": true
         }
     },
-    
+
     /**
      * Settings specific to testing builds.
      */
@@ -303,13 +298,18 @@
             "enable": false
         }
     },
-    
+
     /**
      * Settings specific to development builds.
-     */
-    "development": {
-    },
-
+    *
+    * "development": {
+    *	"js": [{
+    *        "path": "http://local.senchainspector.com:1839/inspector.js",
+    *        "remote": true,
+    *        "bootstrap": true
+    *    }]
+    *},
+    */
     /**
      * Controls the output structure of development-mode (bootstrap) artifacts. May
      * be specified by a string:
@@ -339,7 +339,7 @@
      */
     "bootstrap": {
         "base": "${app.dir}",
-        
+
         "microloader": "bootstrap.js",
         "css": "bootstrap.css"
     },
@@ -384,15 +384,15 @@
      *      }
      *
      */
-    
+
     "output": {
         "base": "${workspace.build.dir}/${build.environment}/${app.name}",
         "appCache": {
             "enable": false
         }
     },
-    
-    
+
+
     /**
     * Controls for localStorage caching
     *   "cache": {
@@ -519,7 +519,7 @@
      *     }
      *
      */
-    
+
 
     /**
      * Uniquely generated id for this application, used as prefix for localStorage keys.

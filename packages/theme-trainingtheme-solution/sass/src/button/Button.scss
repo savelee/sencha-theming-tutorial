@@ -1,0 +1,44 @@
+.x-btn-default-toolbar-small,
+.x-btn-default-toolbar-medium,
+.x-btn-default-toolbar-large {
+	&:hover {
+	  background-color: darken($highlight-color, 10%);
+	  -webkit-transition: background-color 2s ease-out;
+	  -moz-transition: background-color 2s ease-out;
+	  -o-transition: background-color 2s ease-out;
+	  transition: background-color 2s ease-out;
+	}
+}
+
+//Sencha UIs
+@include extjs-button-small-ui(
+	$ui: 'round',
+
+	$font-weight: bold,
+	$padding: 5px
+)
+
+@include extjs-button-medium-ui(
+	$ui: 'round',
+
+	$font-weight: bold,
+	$padding: 8px
+)
+
+@include extjs-button-large-ui(
+	$ui: 'round',
+
+	$font-weight: bold,
+	$padding: 12px
+)
+
+.x-btn-round-large,
+.x-btn-round-medium,
+.x-btn-round-small {
+	-ms-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  margin: 5px;
+	text-transform: uppercase;
+}

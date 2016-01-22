@@ -21,8 +21,8 @@ Ext.application({
     launch: function(){
 
         //<debug>
-        SenchaInspector.init();
-    
+        //SenchaInspector.init();
+
         // FANCY FASHION SHIT
         //http://localhost:1841/extthemingapp/?platformTags=fashion:true
         //sencha app watch
@@ -41,7 +41,7 @@ Ext.application({
 
         //</debug>
     }
-	
+
     //-------------------------------------------------------------------------
     // Most customizations should be made to ThemingApp.Application. If you need to
     // customize this file, doing so below this section reduces the likelihood

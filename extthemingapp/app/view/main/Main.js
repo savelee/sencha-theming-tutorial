@@ -11,6 +11,7 @@ Ext.define('ThemingApp.view.main.Main', {
             xtype: 'panel',
             x: 10,
             y: 10,
+            ui: 'macosx',
             height: 150,
             maxWidth: 150,
             title: 'Regular Panel',
@@ -380,8 +381,8 @@ Ext.define('ThemingApp.view.main.Main', {
                     dataIndex: 'age',
                     text: 'Num'
                 },
-                { 
-			        xtype : 'templatecolumn', 
+                {
+			        xtype : 'templatecolumn',
 			        dataIndex: 'age',
 			        text: 'New',
 			        flex : 1,

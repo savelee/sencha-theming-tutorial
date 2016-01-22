@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'feedviewer';
+	src:url('fonts/feedviewer.eot?8asiua');
+	src:url('fonts/feedviewer.eot?8asiua#iefix') format('embedded-opentype'),
+		url('fonts/feedviewer.ttf?8asiua') format('truetype'),
+		url('fonts/feedviewer.woff?8asiua') format('woff'),
+		url('fonts/feedviewer.svg?8asiua#feedviewer') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+//https://www.google.com/fonts/specimen/Roboto
+@include google-webfont(
+    $font-name: 'Roboto',
+    $font-weights: 300 400
+);
+
+a {
+  color: $link-color;
+}
+
+.feed-edit:before {
+	content: "\e900";
+  font-family: 'feedviewer';
+}
+.theme:before {
+	content: "\e901";
+  font-family: 'feedviewer';
+}
+.feed-remove:before {
+	content: "\e902";
+  font-family: 'feedviewer';
+  font-size: 10px;
+}
+.rss:before {
+	content: "\e903";
+  font-family: 'feedviewer';
+}
+
+.post-data {
+  margin: 20px;
+
+  .post-date {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .post-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 5px 0;
+  }
+
+  .post-author {
+    font-size: 12px;
+    color: $link-color;
+    margin: 0;
+  }
+}
+
+.post-body {
+  margin: 20px;
+
+  img {
+    margin: 0 20px 0 0;
+    max-width: 500px;
+  }
+}
+
+//override
+.logo {
+  color: $white-color;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+}
