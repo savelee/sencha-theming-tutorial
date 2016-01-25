@@ -40,6 +40,10 @@ build/
 ext/
 .sencha/
 packages/local/
+*bootstrap.json
+*classic.json
+*modern.json
+*workspace.json
 
 .sencha_backup/
 *slicer-temp*
