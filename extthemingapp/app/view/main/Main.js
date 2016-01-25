@@ -209,7 +209,7 @@ Ext.define('ThemingApp.view.main.Main', {
                 allowBlank: false,
                 maxLength: 2,
                 value: "2222",
-                emptyText: "placeholder",
+                emptyText: "placeholder"
             }],
             width: 260
         },
